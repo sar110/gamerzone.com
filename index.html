@@ -1,422 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>
+<title>
     N.E.C
-  </title>
+</title>
 <style>
-  h1{
-    text-decoration: solid;
-  }
     *{
-        margin: 0px;
-        padding: 0px;
+        margin: auto;
+        padding: auto;
     }
-    .head{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 120px;
-        box-shadow: 0 0 90px rgb(167, 3, 255);
-        align-items: center;
-        background: #000;
-    }
-   .head h1{
-        color: hsl(294, 100%, 69%);
-        font-family: fantasy;
-        text-shadow:0 0 22px #ea07ff;
-        font-size: 50px;
-    }
-   .head p9{
-      text-shadow:0 0 32px #ff8400;
-        font-size: 50px;
-        color: rgb(246, 255, 0);
-        font-family: fantasy;
-    }
-    .bottom h3{
-      text-align: left;
-    }
-    
     body{
-        background-repeat:repeat-y;
+        background-repeat: repeat-y;
     }
-  
     h1{
-        color: hsl(294, 100%, 69%);
-        font-family: fantasy;
-        text-shadow:0 0 22px #ea07ff;
-        font-size: 50px;
+        color:rgb(255, 79, 79);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-shadow: 0 0 80px rgb(255, 23, 23);
         text-align: center;
-    } 
-
-    p9{
-      text-shadow:0 0 32px #ff8400;
         font-size: 50px;
-        color: rgb(246, 255, 0);
-        font-family: fantasy;
-        text-align:center;
     }
-    
-
-   .must  a {
-    position: relative;
-    padding: 10px 15px;  
-    font-size: 1.5em;
-    color:rgb(255, 255, 255);
-    text-shadow: 0 0 40px rgb(0, 255, 128);
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    transition: 0.5s;
-    border: 2px solid rgb(42, 255, 113);
-    font-family: fantasy;
-    border-radius: 14px;
+    p{
+        color: aliceblue;
+        text-shadow: 0 0 6px whitesmoke;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 20px;
     }
-   .must  a :hover{
-    color: #fff;
-    border: 2px solid rgba(94, 255, 177);
-    text-shadow: var(--clr);
-  }
-  .must a::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width:100% ;
-    height:100% ;
-    background: var(--clr);
-    z-index: -1;
-    transform: scale(0);
-    transition: 0.5s;
-    content:'' ;
-  }
- .must a:hover ::before {
-  transform: scale(1);
-  transition-delay: 0.5s;
-  box-shadow: 0 0 10px var(--clr),
-  0 0 30px var(--clr),
-  0 0 60px var(--clr);
-}
-
-
-     a{
-    position: relative;
-    padding: 10px 15px;  
-    font-size: 1.5em;
-    color:rgb(255, 6, 6);
-    text-shadow: 0 0 40px var(--clr);
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    transition: 0.5s;
-    border: 2px solid rgb(255, 42, 42);
-    font-family: fantasy;
-    border-radius: 14px;
+    h2{
+        color:rgb(255, 237, 34);
+        text-shadow: 0 0 6px rgb(255, 255, 0);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 30px;
     }
-    a :hover{
-    color: #fff;
-    border: 2px solid rgba(94, 255, 177);
-    text-shadow: var(--clr);
-  }
-   a::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width:100% ;
-    height:100% ;
-    background: var(--clr);
-    z-index: -1;
-    transform: scale(0);
-    transition: 0.5s;
-    content:'' ;
-  }
-  a:hover ::before{
-  transform: scale(1);
-  transition-delay: 0.5s;
-  box-shadow: 0 0 10px var(--clr),
-  0 0 30px var(--clr),
-  0 0 60px var(--clr);
-}
-
-h2{
-    color: rgb(238, 255, 0);
-    font-family: fantasy;
-    text-shadow: 0 0 4px rgb(0, 0, 0);
-    font-size: 38px;
-}
-.head p9{
-  font-size: 60px;
-}
-
-p{
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
-    text-shadow: 0 0 3px white;
-}
-p7{
-    color: rgb(255, 41, 41);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 26px;
-    text-shadow: 0 0 3px rgb(255, 70, 70);
-}
-.anchor a{
-    color: rgb(255, 255, 255);
-    font-family: fantasy;
-    text-shadow: 0 0 16px rgb(0, 255, 191);
-    border: none;
-}
-.links a{
-    color: rgb(255, 255, 255);
-    font-family: fantasy;
-    text-shadow: 0 0 6px rgb(0, 255, 191);
-    font-size: 18px;
-    border: none;
-
-}
-
-.head img{
-  border-radius: 100%;
-  box-shadow: 0 0 30px rgb(255, 35, 35);
-}
-iframe{
-  box-shadow: 0 0 22px rgb(0, 255, 119);
-  margin: 2px;
-  padding: 2px;
-}
-h3{
-  color: rgb(246, 255, 0);
-  font-family: fantasy;
-  text-shadow: 0 0 12px rgb(255, 89, 0);
-  font-size: 38px;
-  text-align: center;
-}
-p8{
-  color: wheat;
-  text-shadow: 0 0 12px rgb(0, 255, 123);
-  font-family: fantasy;
-  text-align: center;
-  font-size: 38px;
-}
-span2{
-  color: wheat ;
-  text-shadow: 0 0 6px whitesmoke;
-  text-align: center;
-}
-h5{
-  color: black;
-  font-size: 1px;
-}
-h4{
-  color: rgb(251, 255, 0);
-  font-family: fantasy;
-  letter-spacing: 4px;
-  text-align: left;
-  text-shadow: 0 0 2px rgb(0, 0, 0);
-  font-size: 38px;
-}
-.secondpart img{
-  border: 3px;
-  border-color: #bf00ff;
-  border-style: groove;
-  border-width: 4px;
-  box-shadow: 0 0 2px rgb(175, 4, 255);
-}
-.secondpart a{
-  color: white;
-  background-color: rgb(0, 255, 0);
-  box-shadow: 0 0 4px rgb(0, 0, 0);
-  text-shadow: 0 0 4px rgb(0, 0, 0);
-  border-radius: 4px;
-  font-family: fantasy;
-  padding: 2px;
-  margin: 2px;
-  text-align: left;
-  border-color: black;
-  border: 2px;
-  font-size: 24px;
-  text-align:right;
-}
-h6{
-  color: whitesmoke;
-  background: rgb(9, 9, 9);
-  text-shadow:0 0 2px #fff;
-  text-align: left;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  letter-spacing: 4px;
-}
-audio{
-  background: #03ff5b;
-}
-.joiner img{
-  border-radius: 12px;
-  border:rgb(175, 4, 255);
-  border-style: groove;
-  box-shadow: 0 0 16px rgb(0, 255, 106);
-}
-footer{
-  color: rgb(73, 73, 73);
-  background-color: whitesmoke;
-  font-family: sans-serif;
-  font-size: 15px;
-  text-align: center;
-}
-footer a{
-  font-size: 15px;
- color: #00ffff;
-  border: none;
-}
-.joiner a,.pro a{
-  font-size: 28px;
- color: #00ff77;
-  border: none;
-  text-shadow: 0 0 20px #00ff73;
-}
-
+    img{
+        border-radius: 4px;
+        border: 4px;
+        border-color: rgb(255, 0, 255);
+        box-shadow: 0 0 6px rgb(204, 0, 255);
+    }
 </style>
 </head>
 <body background="Purple and Red Illustration Minimalist X60x6 Squad Gaming Desktop Backgrounds (4).png">
-  <audio src="Powerful-Trap-.mp3" autoplay loop ></audio>
-    <hr color="Purple">  
-    <div class="head">
-     <img src="channels4_profile.jpg" align="left" width="80">
-    <p9><b><i>/\/EC</i></b></p9>
-    <h1> <b> Never Ever Cry </b> </h1>
-     <a href="https://www.youtube.com/channel/UCAs_ur661fkbJ0r2mWefZnQ"style="--clr:#ff1867;" >Subscribe</a> 
-     <div class="anchor"><a href="join.html">Contact/Collaboration</a></div>
-     </div>
-     <hr color="Purple"><br>
-     <div class="bottom"><br><br>
-    <h3><u><b> Watch The Latest One's </b></u></h3> <br>
-    <p> 
-      <u> <b>| View The Latest Videos And Posts Fron N.E.C | New Release Gaming Video Here | Stay Tuned And Support | <br> 
-       | Give The Feedback Also & Share Your Love Guy's | <b></b> </u>
-    </p>
-     </div><br><br>
-     <div class="live">
-     <p7>Live Streams</p7><br><br>
-        <iframe width="550" height="300" src=""  allowfullscreen></iframe>
-     </div>
-     <br>
-     <br>
-      <div>
-        <p7>Videos</p7><br><br>
-        <iframe width="550" height="300" src="https://www.youtube.com/embed/rBJnmGnabUA"allowfullscreen></iframe>
-      </div>
-      <br>
-      <br>
-      <H3><b> Gaming&Funs.....</b></H3>
-      <br>
-      <div class="joiner"> 
-      <P>
-       <u> MINECRAFT,GTA V,FORTNITE,& MANY GAMES WE PLAY WITH YOU IN LIVE STREAMS </u> 
-      </P><br>
-      <br>
-      <p>
-        JOIN US NOW; <a href="join.html">JOIN NOW !</a>
-      </p>
-      <br><br>
-      <img src="minecraft-1639513933156.jpg" width="200" height="200">    <img src="Grand_Theft_Auto_V.png"  width="200" height="200" >    <img src="fortnite---button-1520296499714.jpg"width="200" height="200" >
-      <br>
-    </div> <br>
-     <p><u><b>
-    For Want Any Kind Of Help From Us, Feedback Now!; <br>
-    Watch The Best Gaming Solutions And Gameplay OR Live Streams Here. 
-     </b> </u> </p>
-     <br>
-     <br>
-     <p7><u><b>
-     If You Are Also Want To Live Or Upload Any Post Here Join Us Now ! 
-     </b></u></p7>
-     <br>
-     <br>
-     <br>
-     <h3>
-        Gaming Solutions 
-     </h3>
-     <br>
-     <br>
-      <h1>
-     <u>  Minecraft  </u>
-      </h1>
-      <br>
-      <br>
-      <br>
-      <br>
-       <div class="must">
-        <a href="https://mcpedl.org/minecraft-pe-1-19-21-apk/" >For MOBILE "POCKET EDITION"</a><br><br><br>
-        <a href="https://tlauncher.org/en/download_1/">For PC "JAVA EDITION"</a>
-        </div>
-     <br>
-     <br>
-     <br>
-     <p7><u><b> disclaimer:</b></u></p7>
-     <br>
-     <br>
-     <p>
+   
+    <h1>
+    Gamer Zone 
+    </h1>
+    <br>
+    <br>
+    <br>
+    <p><u>
+    HERE YOU GOT GAMING + ENTERTAINMENT ALSO, In Live Streams You Also Have A Chance To Play With Us. 
+    </u></p>
+    <br>
+    <h2>
+    <b>
         <u>
-            <b>
-                If Some Mods Are Now Work Please Check The Version Of Both Minecraft Or Mod That You Download; <br>
-                Some Minecraft Mods Are Not Guranteed To Work, Download By Your Choice.
-            </b>
+            Game Like;
         </u>
-     </p>
-     <br>
-     <br>
-     <br>
-     <h3> <b> <u> BEST HOT MODS FOR MINECRAFT </u> </b> </h3>
-     <br> 
-     <div class="secondpart">
-     <br>
-     <img src="pixelmon121.jpeg" width="550px">
+    </b>
+    </h2>
     <br>
-     <a href="https://www.curseforge.com/minecraft/mc-mods/pixelmon">Download</a>
-     <br>
-     <br>
-     <p><u><b>100000+ DOWNLOADS <br>
-      NO GLITCH, AND ALSO ADDED NEW POKEMONS IN THIS MOD</b></u> 
-     </p>
-    </div>
+    <p> <b> <u>
+ Minecraft,GTA 5,FORTNITE,NEW STATE AND MANY EPIC GAMES.
+    </u> </b> </p>
     <br>
     <br>
     <br>
     <br>
+    <h2>
+        Recently Uploaded;
+    </h2>
     <br>
-    <div class="middlecs">
-     <br>
-     <br>
-
-      <H2>
-        Best Mod's 
-      </H2>
-      </div>
-      <br>
-      <br>
-      <br>
-      <div class="links">
-      <p>
-        <u>
-          <b><br>
-            Herobrine Mods Link;<br><a href="https://mcpedl.org/herobrine-mod-minecraft-pe/">POCKET EDITION</a><a href="https://www.planetminecraft.com/mods/tag/herobrine/">JAVA EDITION</a><br><br>
-            Minecraft Adventure Mods Link;<br><a href="https://mcpedl.com/new-ender-phantom-endermare-mob-addon/">POCKET EDITION</a><a href="https://www.curseforge.com/minecraft/mc-mods/adventure-rpg">JAVA EDITION</a><br><br>
-          </b>
-        </u>
-      </p>
-    <br>
-    </div>
-    <br>
-    <br>
+    <iframe width="550" height="325" src="https://www.youtube.com/embed/rBJnmGnabUA" controls allowfullscreen></iframe>
     <br>
     <br>
     <br>
     <br>
 
-      <footer><hr color="grey">
-      <br>
-      <p4><b><u>
-        For Any Feedback<a href="join.html">Contact Us!</a><br>
-        ALL RIGHT RESERVED BY &#169 &#174 S.A.R OFFICIALS. <br> 
-        Thanks For Your Support.<br>
-      </u></b></p4>
-      </footer>
+
 </body>
 </html>
